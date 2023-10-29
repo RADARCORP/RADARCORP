@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAMIFICADO</title>
+  <link rel="stylesheet" href="login.css">
+  
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-image: url('fundo.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .container {
+      margin: 20px;
+      background: none;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    #campoTexto {
+      width: 80%;
+      border: none;
+    }
+    #botaoProximo {
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="Imagem no topo">
+  <div class="container">
+    <h3></h3>
+    <label for="campoTexto">Qual a cor da agua do mar?</label>
+    <br>
+    <input type="text" id="campoTexto" placeholder="resposta">
+    <button id="botaoProximo" onclick="validarCampo()">Enviar</button>
+  </div>
+  
+  <img class="beta" src="beta.png" alt="Imagem no topo">
+  
+  <script src="primeiro.js"></script>
+
+  <audio id="audio" autoplay loop="loop"> 
+    <source src="start.mp3" type="audio/mp3">
+    <script src="mudarborda.js"></script>
+
+  </audio>
+<footer>
+    <p class="p">&copy; 2023 RADAR CORPORATION</p>
+  </footer>
+</body>
+</html>
